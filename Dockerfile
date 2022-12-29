@@ -10,7 +10,7 @@ COPY app.py /app
 COPY requirements.txt /app
 
 RUN mkdir model_data
-ADD model_data/boston_housing_prediction.joblib /app/model_data
+COPY model_data/boston_housing_prediction.joblib /app/model_data
 
 ## Step 3:
 # Install packages from requirements.txt
