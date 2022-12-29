@@ -12,11 +12,13 @@ kubectl run ml-uservice \
         --image=docker.io/anthonyabeo/ml-uservice \
         --labels="ver=1,app=ml-uservice,env=test"
 
-sleep 60
+# wait for 30 seconds to complete pod creation
+sleep 30
+
 # Step 3:
 # List kubernetes pods
-kubectl get pods
+kubectl get pods -l app=ml-uservice
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward ml-uservice 8080:80
+kubectl port-forward ml-uservice 8000:80
