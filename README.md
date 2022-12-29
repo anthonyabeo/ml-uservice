@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![anthonyabeo](https://circleci.com/gh/anthonyabeo/ml-uservice.svg?style=svg)](https://app.circleci.com/pipelines/github/anthonyabeo/ml-uservice)
 
 ## Project Overview
 
