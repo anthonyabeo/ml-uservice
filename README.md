@@ -6,6 +6,17 @@ This project deploys a Machine Learning application on a Kubernetes cluster.
 
 It employs `Makefile` for consolidating and running commands, Circle CI for continous integration, `Dockerfile` for building an image and other shell scripts for running and testing the application.
 
+FILES
+| File          | Description   |        
+| ------------- |:-------------:| 
+| Dockerfile    | building docker images |
+| Makefile     | consolidation and running commands |
+| app.py | main application |
+| run_docker.sh | build and run docker container |
+| upload_docker.sh | push docker image to DockerHub |
+| run_kubernetes.sh | deploy and run application on Kubernetes |
+| requirements.txt | list of Python packages the app utilizes |
+| make_prediction.sh | run a test inference on the application |
 ---
 
 ## Setup the Environment
